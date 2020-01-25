@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ionic-hide-onscroll": [
+        "dist/ionic-hide-onscroll"
+      ],
+      "ionic-hide-onscroll/*": [
+        "dist/ionic-hide-onscroll/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

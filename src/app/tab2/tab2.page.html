@@ -1,9 +1,25 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      Hide Fab
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content #content scrollEvents="true">
+  <ion-card *ngFor="let card of cards">
+    <ion-card-content>
+      <ion-card-title>
+        {{card.Name}}
+      </ion-card-title>
+      <p>
+        {{card.Description}}
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" [hideOnscroll]="content" (click)="onTopClick()">
+    <ion-fab-button>
+      Top
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

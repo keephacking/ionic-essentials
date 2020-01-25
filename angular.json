@@ -171,6 +171,41 @@
           }
         }
       }
+    },
+    "ionic-hide-onscroll": {
+      "projectType": "library",
+      "root": "projects/ionic-hide-onscroll",
+      "sourceRoot": "projects/ionic-hide-onscroll/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ionic-hide-onscroll/tsconfig.lib.json",
+            "project": "projects/ionic-hide-onscroll/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ionic-hide-onscroll/src/test.ts",
+            "tsConfig": "projects/ionic-hide-onscroll/tsconfig.spec.json",
+            "karmaConfig": "projects/ionic-hide-onscroll/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ionic-hide-onscroll/tsconfig.lib.json",
+              "projects/ionic-hide-onscroll/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {

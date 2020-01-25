@@ -1,0 +1,8 @@
+{
+  "name": "ionic-hide-onscroll",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.1.3",
+    "@angular/core": "^8.1.3"
+  }
+}
