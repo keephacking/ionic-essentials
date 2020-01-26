@@ -1,4 +1,4 @@
-# ionic-hide-onscroll
+# [ionic-hide-onscroll](https://github.com/keephacking/ionic-essentials/packages/113903)
 
 A simple plugin to hide elements while scrolling.
 
