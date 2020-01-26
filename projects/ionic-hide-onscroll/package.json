@@ -1,9 +1,21 @@
 {
-  "name": "ionic-hide-onscroll",
-  "version": "0.0.2",
+  "name": "@keephacking/ionic-hide-onscroll",
+  "version": "0.0.4",
   "description": "A plugin to hide elements on scroll",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "angular",
+    "ionic"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/keephacking/ionic-essentials.git",
+    "directory": "projects/ionic-hide-onscroll"
+  },
   "peerDependencies": {
     "@angular/common": "^8.1.3",
     "@angular/core": "^8.1.3"
